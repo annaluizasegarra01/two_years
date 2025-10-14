@@ -1,0 +1,161 @@
+:root{
+   --bg:#efefef;
+  --card:#eee3e3;
+  --text:#f6f0f7;
+  --muted:#f2ecf3;
+  --accent:#1db954;
+  --line:#9a9a9a33; 
+}
+
+*{ box-sizing: border-box; }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;    
+  font-family:"Playfair Display", serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:  linear-gradient(rgba(0, 0, 0, 0.24), rgba(0,0,0,0.5)),
+    url("../imgs/music.jpeg") center/cover no-repeat;
+  opacity: 0.7;
+  z-index: -1;
+} 
+
+.wrap{
+  max-width: 980px;
+  height: 600px;
+  padding: 48px 20px 72px;
+  margin: 0 auto;
+}
+
+h1{
+  margin:0 0 6px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  color: #f7f3f3;
+  text-shadow:0 2px 14px rgba(0, 0, 0, 0.466);
+}
+
+.sub{
+  margin:0 0 28px;
+  color: var(--muted);
+  text-shadow:0 2px 14px rgba(0, 0, 0, 0.466);
+}
+
+.grid{
+  display:grid;
+  margin-top: 70px;
+  grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );
+  gap:30px;
+}
+
+/* cada música */
+.track{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  padding:16px;
+  background: linear-gradient(180deg, var(--card));
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius:16px;
+  text-decoration:none;
+  color:inherit;
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.track:hover{
+  transform: translateY(-2px);
+  border-color: rgba(29,185,84,.5);
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+
+.thumb{
+  width:52px;
+  height:52px;
+  flex: 0 0 52px;
+  display:grid;
+  place-items:center;
+  font-size:22px;
+  background: #0f131c;
+  border-radius:12px;
+  border: 1px solid rgba(255,255,255,.06);
+}
+
+.meta{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
+.meta strong{
+  font-weight:700;
+  line-height:1.2;
+}
+
+.meta small{
+  color:#0f131c;
+}
+
+/* acessibilidade: foco no teclado */
+.track:focus{
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  transform: translateY(-1px);
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    border-top: 1px solid var(--line);
+    background: #efefef;
+    padding: 22px 0 34px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 10fr 1fr;
+    gap: 24px;
+    align-items: end;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 120px;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+    font-size: .8rem;
+    letter-spacing: .06em;
+}
+
+.menu a {
+    color: #444;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.signature {
+    text-align: right;
+    margin-right: 100px;
+    font-weight: 500;
+}
+
+.signature p {
+    margin: 0;
+    color: #111111;
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+}
+
+.signature small {
+    color: #666;
+}

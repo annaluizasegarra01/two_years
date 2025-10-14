@@ -20,8 +20,9 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url("../imgs/beach.jpeg") center/cover no-repeat;
-  opacity: 0.3;
+  background:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),
+    url("../imgs/beach.jpeg") center/cover no-repeat;
+  opacity: 0.8;
   z-index: -1;
 } 
 
@@ -44,26 +45,26 @@ body::before {
 }
 
 .carta h1 {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Playfair Display", serif;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
-  color: #3e004b;
+  color: #161516;
   margin-bottom: 25px;
 }
 
 .carta p {
   font-size: 18px;
   line-height: 1.8;
-  color: #383437;
+  color: #161516;
   text-align: justify;
   margin-bottom: 25px;
 }
 
 .assinatura {
   text-align: right;
-  font-family: 'Great Vibes', cursive;
-  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
   color: #383437;
 }
 
