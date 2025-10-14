@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    background-color:#ffd9ae;
+    color: #41005a;
+}
+
+.corpo {
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 98%;
+    height: 98%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*Header*/
+
+.header {
+  height: 80px;
+  border-radius: 15px;
+  background-color: #f1cfff;
+  display: flex;
+  flex-direction:column;
+  justify-content: center ;
+}
+
+.header .container {
+  display: flex;    
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 30px;
+  color: #1d1b1d;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navbar li {
+  padding-left: 10px;
+}
+
+.header a {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: #41005a;
+  transition: font-size 0.6s ease;
+}
+
+.header a:hover {
+  font-size: 1.3rem;
+}
+
+/*botao*/
+
+.botao {
+  height: 50px;
+  width: 170px;
+  background-color:#f1cfff;
+  border-radius: 15px;
+  border-color: #230031;
+  border: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
