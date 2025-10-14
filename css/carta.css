@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:wght@300&display=swap');
+
+:root{
+  --bg:#efefef;
+  --ink:#1b1b1b;
+  --muted:#7a7a7a;
+  --line:#9a9a9a33;
+  --white:#fff;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url("../imgs/beach.jpeg") center/cover no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+} 
+
+.envelope {
+  background: linear-gradient(135deg, #fffaf6, #fdf3ec);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 40px 60px;
+  max-width: 600px;
+  border: 1px solid #3e004b;
+  position: relative;
+  margin: auto;
+}
+
+.envelope::before {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  font-size: 28px;
+}
+
+.carta h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  color: #3e004b;
+  margin-bottom: 25px;
+}
+
+.carta p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #383437;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+.assinatura {
+  text-align: right;
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
+  color: #383437;
+}
+
+.assinatura span {
+  font-size: 28px;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    border-top: 1px solid var(--line);
+    background: #efefef;
+    padding: 22px 0 34px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 10fr 1fr;
+    gap: 24px;
+    align-items: end;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 120px;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+    font-size: .8rem;
+    letter-spacing: .06em;
+}
+
+.menu a {
+    color: #444;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.signature {
+    text-align: right;
+    margin-right: 100px;
+    font-weight: 500;
+}
+
+.signature p {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+}
+
+.signature small {
+    color: #666;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+
+/* ---------------- Responsivo ---------------- */
+@media (max-width: 880px){
+  .hero-grid{ min-height:46vh; }
+  .vline-left{ transform:translateX(-180px); }
+  .vline-right{ transform:translateX(180px); }
+  .fav-grid, .footer-grid{
+    grid-template-columns:1fr;
+  }
+  .signature{ text-align:left; }
+  .search{ justify-self:stretch; }
+}

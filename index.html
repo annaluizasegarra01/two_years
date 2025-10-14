@@ -1,37 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💌</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>R&A</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 
 <body>
-    <div class="corpo">
-        <div class="header">
-            <div class="container">
-                <h1 class="titulo">Two Years</h1>
-                <div class="navbar">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>|</li>
-                    <li>
-                        <a href="opcoes.html">Opções</a>
-                    </li>
-                </div>
+
+    <!-- HERO (duas fotos) -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-photo">
+                <img src="imgs/first pic.jpeg" alt="foto 1">
+            </div>
+            <div class="hero-photo">
+                <img src="imgs/date.jpeg" alt="foto 2">
+            </div>
+
+            <div class="hero-overlay">
+                <div class="quote">❞</div>
+                <h1><span>You & I</span><br>Two years till now</h1>
+                <a class="btn" href="opcoes.html">Clique Aqui!</a>
             </div>
         </div>
+    </header>
 
-        <h2>Clique no Botão</h2>
+    <!-- BLOCO CENTRAL (lyrics + linhas) -->
+    <section class="lyrics">
+        <div class="container lyrics-wrap">
+            <p class="line">
+                Amor da minha <a href="#" class="underline">VIDA</a> daqui até a
+            </p>
+            <p class="line">
+                ETERNIDADE, Nossos destinos foram
+            </p>
+            <p class="line">
+                traçados na maternidade
+            </p>
 
-        <div class="botao">
-            <a href="opcoes.html">Clique aqui :)</a>
+            <!-- linhas verticais/centrais -->
+            <i class="vline vline-left"></i>
+            <i class="vline vline-center"></i>
+            <i class="vline vline-right"></i>
+
+            <a class="share" href="opcoes.html">Pode clicar<br>Aqui também!</a>
         </div>
-    </div>
+    </section>
+
+    <!-- TEXTO + FOTO PB -->
+    <section class="favorite">
+        <div class="container fav-grid">
+            <div class="fav-text">
+                <h2>PARA A MINHA PESSOA<br>PREFERIDA <span class="sparkle">✧</span></h2><br>
+
+                <div class="copy">
+                    <p>
+                        Olá, meu amorzinho, tudo bem?<br>
+                        Fiz esse site para diferenciar um pouquinho o meu jeito transmitir carinho,<br>
+                        como eu sempre faço cartinhas, pensei que isso seria mais inesperado!<br>
+                        Espero que você goste bastante...<br>
+                        Feliz 2 anos de namoro, espero que venham mais muitos pela frente,<br>
+                        Eu te amo muito!<br>
+                        Preste atenção nas coisas que estão nas páginas que podem ser nomes de músicas! <br>
+                    </p>
+                </div>
+            </div>
+
+            <figure class="fav-photo">
+                <img src="imgs/d week.jpeg" alt="foto preto e branco">
+            </figure>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <nav class="menu">
+                <ul>
+                    <li><a href="carta.html">CARTINHA</a></li>
+                    <li><a href="album.html">FOTOS</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+
+            <div class="signature">
+                <p>By <em>Anna Luiza Segarra</em></p>
+                <small>eu te amo</small>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

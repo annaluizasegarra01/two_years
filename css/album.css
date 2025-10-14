@@ -1,0 +1,185 @@
+:root {
+    --radius: 10px;
+    --bg: #efefef;
+    --ink: #1b1b1b;
+    --muted: #7a7a7a;
+    --line: #9a9a9a33;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--bg);
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+h1 {
+    font-size: 32px;
+    font-family: "Playfair Display", serif;
+    margin-left: 50px;
+    font-weight: 540;
+}
+
+.sparkle{ font-size:1.1rem; opacity:.8; }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    border-top: 1px solid var(--line);
+    background: #efefef;
+    padding: 22px 0 34px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 10fr 1fr;
+    gap: 24px;
+    align-items: end;
+}
+
+.menu ul {
+    list-style: none;
+    padding-left: 120px;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+    font-size: .8rem;
+    letter-spacing: .06em;
+}
+
+.menu a {
+    color: #444;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.signature {
+    text-align: right;
+    margin-right: 100px;
+    font-weight: 500;
+}
+
+.signature p {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.35rem;
+}
+
+.signature small {
+    color: #666;
+}
+
+/*-----------------Decoração---------------------*/
+
+.vertical {
+  position: fixed;
+  top: 97%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left top;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #9016a0;
+  opacity: 0.7;
+}
+
+.vertical.left {
+  left: 8px; /* margem da esquerda */
+}
+
+.vertical.right {
+  right: 8px; /* margem da direita */
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right top;
+}
+
+/* ---------------- Responsivo ---------------- */
+@media (max-width: 880px) {
+    .hero-grid {
+        min-height: 46vh;
+    }
+
+    .vline-left {
+        transform: translateX(-180px);
+    }
+
+    .vline-right {
+        transform: translateX(180px);
+    }
+
+    .fav-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .signature {
+        text-align: left;
+    }
+
+    .search {
+        justify-self: stretch;
+    }
+}
+
+@media (max-width: 768px) {
+    .item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .item img {
+        height: 160px;
+    }
+}
